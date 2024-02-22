@@ -392,6 +392,7 @@ body{
 .room-content{
     margin-bottom: 60px;
     background-color: #fff;
+    overflow: hidden;
     transition: all .3s ease-in-out;
 }
 .room-content .room-img .room-overlay{
@@ -409,7 +410,8 @@ body{
 .room-content .room-img a img{
     max-width: 100%;
     object-fit: cover;
-    transition: all .3s ease-in-out;
+    filter: saturate(1.7);
+    transition: all .5s ease-in-out;
 }
 .room-content .room-info{
     text-align: center;
@@ -463,9 +465,11 @@ body{
 .room-content:hover .room-info h3{
     color: #fff;
 }
-/* .room-content:hover .room-img img{
-    
-} */
+.room-content:hover .room-img img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /**************************************************************************************************************/
 /* image section  7 */
 .sec7{
@@ -911,12 +915,12 @@ body{
     position: relative;
     background-color: #1a1a1a;
     width: 100%;
-    padding: 8em 0 20em;
+    padding: 6em 0 .5em;
 }
 .footer-parts{
     width: 100%;
     height: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     text-align: left;
     align-items: lef;
 }
@@ -987,7 +991,6 @@ body{
 }
 .footer-icon2{
     margin-top: .7em;
-    /* padding: 0; */
 }
 .footer-icon2 li{
     list-style: none;
@@ -1002,20 +1005,20 @@ body{
     font-size: 16px;
     margin-right: 10px;
 }
-
-/* .footer-portfolio{
-    margin-bottom: 50px;
-    font-size: .8125rem;
-    text-align: left;
-} */
 .footer-portfolio{
-    margin: 0px -4px;
-    padding-left: 0px;
+    padding-left: 0;
+    margin: 42px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
 }
 .footer-portfolio li{
     width: 33.3333%;
     float: left;
-    padding: 4px;
+    padding: 4px 3px;
     list-style: none;
 }
 .footer-portfolio li a img{
@@ -1024,14 +1027,10 @@ body{
     object-fit: cover;
     transition: all .3s ease-in-out;
 }
-
 .footer-portfolio li a:hover{
     background: rgba(43, 42, 42, 0.5);
     opacity: .6;
 }
-
-
-
 .lastPart-list{
     margin-top: 32px;
 }
