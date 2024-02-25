@@ -9,22 +9,64 @@ body{
     background: #f8f8f8;
 }
 /**********************************************************************************************************/
-/* .nav{
-    
-    position: absolute;
+header{
     background: transparent;
-    top: 22px;
-} */
-.nav-link{
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    padding: 1.2rem 25px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
+    left: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 27px;
+    z-index: 3;
 }
-.nav-link:hover{
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel-name{
+    padding: 0.4rem 11.4rem;
+}
+.hotel-name .nav-logo a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+}
+.hotel-name .nav-logo a span{
+    display: block;
+    line-height: 1.2;
+}
+.hotel-name .nav-logo a small{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+
+.nav-links{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    transition: all .3s ease-in;
+    font-size: 14px;
+    padding: 0 11px 0 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.nav-links li a:hover {
     color: #fff;
 }
 
