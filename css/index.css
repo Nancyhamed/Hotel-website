@@ -57,7 +57,7 @@ nav{
 }
 .nav-links li a{
     text-decoration: none;
-    transition: all .3s ease-in;
+    transition: all .1s ease-in;
     font-size: 14px;
     padding: 0 11px 0 0;
     color: rgba(255, 255, 255, 0.7);
